@@ -18,6 +18,8 @@ app.config={
     'timeBetweenJokes': 1000
 }
 
+console.log(process.env.NODE_ENV);
+
 // Function that prints a random joke
 app.printAJoke = function(){
 
@@ -31,8 +33,7 @@ app.printAJoke = function(){
     var randomNumber = mathLib.getRandomNumber(1, numberOfJokes);
 
     var selectedJoke = allJokes[randomNumber -1];
-
-    console.log(selectedJoke);
+    
 };
 
 
